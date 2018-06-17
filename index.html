@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="http://s3.amazonaws.com/toxiclibsjs/toxiclibsjs/build/toxiclibs.min.js"></script>
+    <script src="./processing.js"></script>
+    <script>
+        var VerletPhysics2D = toxi.physics2d.VerletPhysics2D,
+            VerletParticle2D = toxi.physics2d.VerletParticle2D,
+            AttractionBehavior = toxi.physics2d.behaviors.AttractionBehavior,
+            GravityBehavior = toxi.physics2d.behaviors.GravityBehavior,
+            Vec2D = toxi.geom.Vec2D,
+            Rect = toxi.geom.Rect;
+    </script>
+    <script type="application/processing" src="./code.pde"></script>
+    <canvas id="myCanvas" tabindex="0" style="image-rendering: -webkit-optimize-contrast !important;"></canvas>
+</body>
+
+</html>
